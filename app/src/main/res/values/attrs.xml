@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThumbsView">
+        <!-- 原始数据-->
+        <attr name="tv_count" format="integer" />
+        <!-- 文字大小 默认一样大 -->
+        <attr name="tv_text_size" format="integer|reference" />
+        <!-- 未改变部分的颜色-->
+        <attr name="tv_no_change_text_color" format="color|reference" />
+        <!-- 改变部分的颜色-->
+        <attr name="tv_changed_text_color" format="color|reference" />
+        <!--改变部分与不改变部分的间隔  当改变模式为全改变时 间隙重置为0-->
+        <attr name="tv_text_space" format="integer|reference" />
+        <!-- 改变的步幅-->
+        <attr name="tv_step" format="integer" />
+        <!-- 改变的模式 all 为全部改变 part 为部分改变-->
+        <attr name="tv_change_mode" format="enum">
+            <enum name="all" value="0" />
+            <enum name="part" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
